@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="350.0" prefWidth="648.0" style="-fx-background-color: #2d98da;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Label layoutX="41.0" layoutY="38.0" prefHeight="28.0" prefWidth="110.0" text="Driver Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="84.0" prefHeight="28.0" prefWidth="110.0" text="NIC">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="132.0" prefHeight="28.0" prefWidth="166.0" text="Driving License No.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="186.0" prefHeight="28.0" prefWidth="110.0" text="Address">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="234.0" prefHeight="28.0" prefWidth="110.0" text="Contact No.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDriverName" layoutX="205.0" layoutY="37.0" prefHeight="31.0" prefWidth="425.0">
+         <font>
+            <Font name="Consolas Italic" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNIC" layoutX="205.0" layoutY="82.0" prefHeight="31.0" prefWidth="425.0">
+         <font>
+            <Font name="Consolas Italic" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLicenseNo" layoutX="205.0" layoutY="130.0" prefHeight="31.0" prefWidth="425.0">
+         <font>
+            <Font name="Consolas Italic" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="206.0" layoutY="178.0" prefHeight="31.0" prefWidth="425.0">
+         <font>
+            <Font name="Consolas Italic" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="206.0" layoutY="229.0" prefHeight="31.0" prefWidth="425.0">
+         <font>
+            <Font name="Consolas Italic" size="17.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="522.0" layoutY="293.0" onAction="#btnAddDriver" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #44bd32; -fx-background-radius: 50;" text="Add Driver">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

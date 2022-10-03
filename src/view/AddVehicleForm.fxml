@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="350.0" prefWidth="648.0" style="-fx-background-color: #2d98da;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label layoutX="18.0" layoutY="71.0" text="Vehicle Number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleNumber" layoutX="157.0" layoutY="62.0" prefHeight="44.0" prefWidth="195.0" />
+      <TextField fx:id="txtWeight" layoutX="157.0" layoutY="144.0" prefHeight="44.0" prefWidth="195.0" />
+      <TextField fx:id="txtNoOfPassenger" layoutX="157.0" layoutY="227.0" prefHeight="44.0" prefWidth="195.0" />
+      <JFXButton buttonType="RAISED" layoutX="477.0" layoutY="282.0" onAction="#btnAddVehicle" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #20bf6b; -fx-border-radius: 40; -fx-border-color: #4b6584; -fx-background-radius: 40;" text="Add Vehicle">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbVehicleType" labelFloat="true" layoutX="429.0" layoutY="69.0" onAction="#cmbVehicleSelect" prefHeight="37.0" prefWidth="208.0" promptText="Vehicle Type">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <Label layoutX="20.0" layoutY="156.0" text="Maximum weight">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="239.0" text="No of passengers">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
